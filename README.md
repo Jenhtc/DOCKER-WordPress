@@ -8,7 +8,7 @@ $ docker --version<br>
 $ docker-compose --version<br>
 $ docker-machine --version
 ```
-## 1.0 Remove older versions
+# 1 Remove older versions
 ```
 $ sudo apt-get remove docker docker-engine docker.io containerd runc
 ```
@@ -49,3 +49,9 @@ $ docker run hello-world
 ```
 This will clone the welcome message from the Docker Hub page and should print :
 > `Hello from Docker. This message shows that your installation appears to be working correctly.`
+
+# 2 DAMP-PMA
+**Fork** or **Clone** [this GitHub repo][DampPma] into your local directory (ex. `/home/piralimic/wordpress` ) and **open in the Terminal** (Ctrl + Alt + T)<br>
+Then follow the instruction from the [README.md](https://github.com/becodeorg/LIE-Jepsen-2.14/blob/master/02-the-hill/03-wordpress/parcours/docker-compose/README.md)
+
+[DampPma]: https://github.com/becodeorg/LIE-Jepsen-2.14/tree/master/02-the-hill/03-wordpress/parcours/docker-compose
