@@ -66,7 +66,7 @@ $ docker-machine create --driver virtualbox default
 $ sudo curl -L "https://github.com/docker/compose/releases/download/1.24.1/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
 ```
 # 2 DAMP-PMA
-**Fork** or **Clone** this [GitHub repo][DampPma] into your local directory (ex. `/home/piralimic/wordpress` ) and **open in the Terminal** (Ctrl + Alt + T)<br>
-Then follow the instruction from the [README.md](https://github.com/becodeorg/LIE-Jepsen-2.14/blob/master/02-the-hill/03-wordpress/parcours/docker-compose/README.md)
+**Fork** or **Clone** this [GitHub repo][DampPma] into your local directory (ex. `/home/piralimic/wordpress` ) and you can now **Open in the Terminal** (Ctrl + Alt + T)<br>
+Then follow the instructions from the [README.md](https://github.com/becodeorg/LIE-Jepsen-2.14/blob/master/02-the-hill/03-wordpress/parcours/docker-compose/README.md)
 
 [DampPma]: https://github.com/becodeorg/LIE-Jepsen-2.14/tree/master/02-the-hill/03-wordpress/parcours/docker-compose
