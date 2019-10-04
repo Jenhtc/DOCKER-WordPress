@@ -67,6 +67,6 @@ $ sudo curl -L "https://github.com/docker/compose/releases/download/1.24.1/docke
 ```
 # 2 DAMP-PMA
 **Fork** or **Clone** this [GitHub repo][DampPma] into your local directory (ex. `/home/piralimic/wordpress` ) and you can now **Open in the Terminal** (Ctrl + Alt + T)<br><br>
-For the next steps follow the instructions from the [README.md](https://github.com/becodeorg/LIE-Jepsen-2.14/blob/master/02-the-hill/03-wordpress/parcours/docker-compose/README.md)
+For the next steps follow the instructions from the [README.md](https://github.com/becodeorg/LIE-Jepsen-2.14/blob/master/02-the-hill/03-wordpress/parcours/docker-compose/README.md) of the linked repo above.
 
 [DampPma]: https://github.com/becodeorg/LIE-Jepsen-2.14/tree/master/02-the-hill/03-wordpress/parcours/docker-compose
