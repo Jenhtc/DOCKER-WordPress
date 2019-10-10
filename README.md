@@ -4,8 +4,8 @@ https://docs.docker.com
 
 Check if you already have one of this tree elements:
 ```
-$ docker --version<br>
-$ docker-compose --version<br>
+$ docker --version
+$ docker-compose --version
 $ docker-machine --version
 ```
 # 1 Remove older versions
@@ -69,4 +69,24 @@ $ sudo curl -L "https://github.com/docker/compose/releases/download/1.24.1/docke
 **Fork** or **Clone** this [GitHub repo][DampPma] into your local directory (ex. `/home/piralimic/wordpress` ) <br><br>
 Now you can **Open in the Terminal** (Ctrl + Alt + T) and follow the last instructions from the [README.md](https://github.com/becodeorg/LIE-Jepsen-2.14/blob/master/02-the-hill/03-wordpress/parcours/docker-compose/README.md) of the linked GitHub repo above.
 
+# 3 HOW-TO solve WordPress PERMALINK error 404
+## 3.1 Create new Apache2 .conf with Docker Compose
+put `localhost.conf` in the same directory with `docker-compose.yml`<br>
+```
+$ sudo docker-compose up --build
+```
+## 3.2 Get access to a bash shell in the container
+```
+$ sudo docker ps
+$ sudo docker exec -i -t nameOfContainer_php-apache_1 /bin/bash
+```
+## 3.3 Check if 'localhost.conf' is in the right place
+```
+$ ls /etc/apache2/sites-available/
+```
+## 3.4 Last step
+```
+$ a2enmod rewrite
+$ service apache2 restart
+```
 [DampPma]: https://github.com/becodeorg/LIE-Jepsen-2.14/tree/master/02-the-hill/03-wordpress/parcours/docker-compose
